@@ -1,0 +1,14 @@
+.webcamCapture {
+  position: relative;
+  /* outline: 2px solid red; */
+}
+
+.webcamCapture__button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  /* outline: 2px solid blue; */
+}
