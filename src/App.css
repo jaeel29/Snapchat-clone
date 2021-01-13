@@ -6,3 +6,17 @@
   background-color: #fffb00;
   height: 100vh;
 }
+
+.app__logo {
+  object-fit: contain;
+  width: 80px;
+}
+
+.app__bodyBackground {
+  background-color: white;
+  height: 400px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* display: none; */
+  /* border: 2px solid red; */
+}

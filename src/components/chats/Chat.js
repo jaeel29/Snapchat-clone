@@ -8,7 +8,7 @@ import { selectImage } from '../../features/appSlice';
 import { db } from '../firebase/firebase';
 import './Chat.css';
 
-function Chat({ imageUrl, username, timestamp, read, id }) {
+function Chat({ imageUrl, username, timestamp, read, id, profilePic }) {
   const dispatch = useDispatch();
   const history = useHistory();
 
@@ -28,11 +28,11 @@ function Chat({ imageUrl, username, timestamp, read, id }) {
 
   return (
     <div onClick={open} className="chat" key={id}>
-      <Avatar className="chat__avatar" />
+      <Avatar src={profilePic} className="chat__avatar" />
       <div className="chat__info">
         <h4>{username}</h4>
         <p>
-          Tap to view -{' '}
+          {!read && 'Tap to view -'}{' '}
           <ReactTimeago date={new Date(timestamp?.toDate()).toUTCString()} />
         </p>
       </div>

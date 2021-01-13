@@ -5,7 +5,7 @@
 
 .preview__close {
   position: absolute;
-  top: 0%;
+  top: 0;
   margin: 0.4rem;
   color: white;
   font-size: 1.2rem !important;
