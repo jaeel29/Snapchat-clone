@@ -59,7 +59,7 @@
 
 .chats__posts {
   /* outline: 2px solid red; */
-  /* height: 359px; */
+  height: 400px;
   background-color: white;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
